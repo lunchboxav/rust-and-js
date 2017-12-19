@@ -1,0 +1,14 @@
+{
+  "name": "rust-and-node",
+  "version": "1.0.0",
+  "description": "calling rust from node",
+  "main": "fibonacci.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adityo Pratomo",
+  "license": "ISC",
+  "dependencies": {
+    "ffi": "^2.2.0"
+  }
+}

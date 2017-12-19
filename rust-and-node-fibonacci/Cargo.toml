@@ -1,0 +1,10 @@
+[package]
+name = "fibonacci"
+version = "0.1.0"
+authors = ["Adityo Pratomo <kotakmakan@yahoo.com>"]
+
+[dependencies]
+
+[lib]
+name = "fibonacci"
+crate-type = ["dylib"]
