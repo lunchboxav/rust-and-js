@@ -1,0 +1,11 @@
+[package]
+name = "randomizer"
+version = "0.1.0"
+authors = ["Adityo Pratomo <kotakmakan@yahoo.com>"]
+
+[dependencies]
+libc = "0.2.0"
+
+[lib]
+name = "randomizer"
+crate-type = ["dylib"]
