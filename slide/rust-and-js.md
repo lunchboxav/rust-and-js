@@ -6,7 +6,7 @@
 
 # This Talk is Also Available at
 
-[github.com/froyoframework/rust-intro/slide](http://www.github.com/froyoframework/rust-intro)
+[github.com/lunchboxav/rust-and-js](https://github.com/lunchboxav/rust-and-js)
 
 ---
 
@@ -65,6 +65,8 @@
 
 # NodeJS and Rust via FFI
 
+![](https://lh3.googleusercontent.com/-V1AhzICeGPi2Oju6fKBdre8904FSwTUGnrksE_niR3FrLCbGLStaar0cL1oeIfctVYWLo1uJbN2rFAyqymy=w1651-h889)
+
 ---
 
 # Benefits
@@ -108,6 +110,69 @@
     + `ab` -> `de`
 - Lighter than fibonacci, but might be more real-world case
 - Showcases detail of FFI when handling String in Rust
+
+---
+
+# Frontend: Rust to JS via WASM
+
+---
+
+# WASM
+
+- WebAssembly(WASM) is a binary format and compile target for web browser
+- You can compile C/C++/Rust to `.wasm` and it can be run on the browser
+- The code is faster and smaller than JS
+- WASM won't replace JS anytime soon, but they can coexist and cooperate
+
+---
+
+# How WASM Works
+
+![](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2017/02/04-01-langs09.png)
+
+---
+
+# How WASM Works
+
+![](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2017/02/04-02-langs08.png)
+
+---
+
+# Compiling Rust to WASM
+
+- Rust code can be compiled into `.wasm` by using:
+    + Emscripten compile target for Rust (managed via `rustup`), will act as a bridge from Rust to Emscripten
+    + Emscripten SDK that will compile Rust to asm.js and convert that to WebAssembly
+
+---
+
+# Compiling Rust to WASM
+
+![](https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2017/02/04-03-toolchain07.png)
+
+---
+
+# Interfacing WASM and JS
+
+- We still need JS code that will act as glue between JS and WASM
+- the WASM module can then be loaded in JS
+- Afterwards, we JS can call the function declared in WASM module
+
+---
+
+# Example: Hello World
+
+- Simple Rust program that sends String
+- The String will then be read by JS in browser client
+- It will then be printed out in console
+
+---
+
+# Current State of WASM in Rust
+
+- Rust target compilation is available not only using emscripten, but also using Rust's built in backend `wasm32-unknown-unknown` (*new!*)
+- To interact with DOM, you can use external Crate, such as `stdweb`
+- Not yet prime for production, but it's coming
 
 ---
 

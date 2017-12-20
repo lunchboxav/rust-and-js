@@ -1,0 +1,1 @@
+{"rustc":1010927952137377595,"features":"[]","target":11416736489784694729,"profile":731176819336294830,"deps":[["stdweb v0.2.0",15964872596962855371]],"local":[{"MtimeBased":[[1513746819,805784200],"D:\\learn\\rust\\rust-and-js\\stdweb-demo\\target\\wasm32-unknown-emscripten\\debug\\.fingerprint\\stdweb-demo-f8ba0363c865c3a5\\dep-bin-stdweb-demo"]}],"rustflags":[]}

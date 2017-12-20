@@ -1,0 +1,4 @@
+[[package]]
+name = "wasm-js-demo"
+version = "0.1.0"
+
